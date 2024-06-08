@@ -1,0 +1,35 @@
+<!-- The purpose of this project is to create a form for customer feedback -->
+
+<!-- U94741303-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Customer Feedback Portal</title>
+    <!-- To implement script.js file -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <form id="feedbackForm">
+        <!-- Text input for customer name -->
+        <input type="text" id="customerName" placeholder="Type Your Name Here" required>
+        <!-- Dropdown selection for customer rating -->
+        <select id="customerRating" required>
+            <option value="">Please Rate Us</option>
+            <option value="1">1 Star</option>
+            <option value="2">2 Stars</option>
+            <option value="3">3 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="5">5 Stars</option>
+        </select>
+        <!-- Text area for customer comments -->
+        <textarea id="customerComments" placeholder="Type Comments Here" required></textarea>
+        <!-- Submit Feedback button-->
+        <button type="submit">Submit Feedback</button>
+    </form>
+    <!-- Div element to display feedback-->
+    <div id="feedback"></div>
+</body>
+</html>
